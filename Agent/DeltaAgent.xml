@@ -1,0 +1,21 @@
+<AgentConfiguration>
+
+    <MetricInstance Id="\&quot;9a9ab11d-401a-4b22-97ed-34c573643ce3\&quot;" AdapterAssembly="Datavail.Delta.Agent.Plugin.CheckIn" AdapterClass="CheckInPlugin" AdapterVersion="5.6.24-log" Label="Check-In" Data="&lt;CheckInPluginInput Label=&quot;Check-In&quot; /&gt;" resultCode="\&quot;0\&quot;" resultMessage="\&quot;\&quot;" ScheduleType="1" ScheduleInterval="5" MetricConfigurationId="09d8cbdc-fc20-44b0-841b-52d32ae30596" />
+
+    <MetricInstance Id="\&quot;FE25DFA4-4A7E-46A2-B78F-D41198A287CE\&quot;" AdapterAssembly="Datavail.Delta.Agent.Plugin.ErrorLog" AdapterClass="LogWatcherPlugin" AdapterVersion="5.6.24-log" product="\&quot;MYSQL Server\&quot;" Label="\&quot;Log Watcher for \u0027/oracle/mysql/jaya/mysql/mysql_error.logu0027\&quot;" resultCode="\&quot;0\&quot;" resultMessage="\&quot;\&quot;" ScheduleType="1" ScheduleInterval="3" MetricConfigurationId="f0513113-25bd-4727-a67a-ed1076fb3a7a" />
+
+	<MetricInstance Id="\&quot;FE25DFA4-4A7E-46A2-B78F-D41198A287CE\&quot;" AdapterAssembly="Datavail.Delta.Agent.Plugin.TableLock" AdapterClass="TableLockPlugin" AdapterVersion="5.6.24-log" product="\&quot;MYSQL Server\&quot;" Label="\&quot;Table Lock for \u0027 u0027\&quot;" resultCode="\&quot;0\&quot;" resultMessage="\&quot;\&quot;" ScheduleType="1" ScheduleInterval="3" MetricConfigurationId="f0513113-25bd-4727-a67a-ed1076fb3a7a" connectionstring="jdbc:mysql://localhost:3306/testing_agent;userId:root;pwd:Maxi@1029"/>
+
+    <MetricInstance Id="\&quot;FE25DFA4-4A7E-46A2-B78F-D41198A287CE\&quot;" AdapterAssembly="Datavail.Delta.Agent.Plugin.ConnectionThreshold" AdapterClass="ConnectionThresholdPlugin" AdapterVersion="5.6.24-log" product="\&quot;MYSQL Server\&quot;" Label="\&quot;Connection Threshold for \u0027 u0027\&quot;" resultCode="\&quot;0\&quot;" resultMessage="\&quot;\&quot;" ScheduleType="1" ScheduleInterval="3" MetricConfigurationId="f0513113-25bd-4727-a67a-ed1076fb3a7a" />
+
+    <MetricInstance Id="\&quot;FE25DFA4-4A7E-46A2-B78F-D41198A287CE\&quot;" AdapterAssembly="Datavail.Delta.Agent.Plugin.SlaveLag" AdapterClass="SlaveLagPlugin" AdapterVersion="5.6.24-log" product="\&quot;MYSQL Server\&quot;" Label="\&quot;Slave Lag for \u0027 u0027\&quot;" resultCode="\&quot;0\&quot;" resultMessage="\&quot;\&quot;" ScheduleType="1" ScheduleInterval="3" MetricConfigurationId="f0513113-25bd-4727-a67a-ed1076fb3a7a" />
+
+    <MetricInstance Id="\&quot;FE25DFA4-4A7E-46A2-B78F-D41198A287CE\&quot;" AdapterAssembly="Datavail.Delta.Agent.Plugin.GaleraSynch" AdapterClass="GaleraSynchStatusPlugin" AdapterVersion="5.6.24-log" product="\&quot;MYSQL Server\&quot;" Label="\&quot;Galera Synch Status for \u0027 u0027\&quot;" resultCode="\&quot;0\&quot;" resultMessage="\&quot;\&quot;" ScheduleType="1" ScheduleInterval="3" MetricConfigurationId="f0513113-25bd-4727-a67a-ed1076fb3a7a" />
+
+    <MetricInstance Id="\&quot;FE25DFA4-4A7E-46A2-B78F-D41198A287CE\&quot;" AdapterAssembly="Datavail.Delta.Agent.Plugin.GaleraCluster" AdapterClass="GaleraClusterMonitorPlugin" AdapterVersion="5.6.24-log" product="\&quot;MYSQL Server\&quot;" Label="\&quot;Galera Cluster Montitor for \u0027 u0027\&quot;" resultCode="\&quot;0\&quot;" resultMessage="\&quot;\&quot;" ScheduleType="1" ScheduleInterval="3" MetricConfigurationId="f0513113-25bd-4727-a67a-ed1076fb3a7a" />
+
+    <MetricInstance Id="\&quot;FE25DFA4-4A7E-46A2-B78F-D41198A287CE\&quot;" AdapterAssembly="Datavail.Delta.Agent.Plugin.NdbCluster" AdapterClass="NDBClusterStatusPlugin" AdapterVersion="5.6.24-log" product="\&quot;MYSQL Server\&quot;" Label="\&quot;NDBClusterStatus for \u0027 u0027\&quot;" resultCode="\&quot;0\&quot;" resultMessage="\&quot;\&quot;" ScheduleType="1" ScheduleInterval="3" MetricConfigurationId="f0513113-25bd-4727-a67a-ed1076fb3a7a" />
+
+    <MetricInstance Id="\&quot;FE25DFA4-4A7E-46A2-B78F-D41198A287CE\&quot;" AdapterAssembly="Datavail.Delta.Agent.Plugin.SlaveisUp" AdapterClass="SlaveIsUpPlugin" AdapterVersion="5.6.24-log" product="\&quot;MYSQL Server\&quot;" Label="\&quot;SlaveIsUp for \u0027 u0027\&quot;" resultCode="\&quot;0\&quot;" resultMessage="\&quot;\&quot;" ScheduleType="1" ScheduleInterval="3" MetricConfigurationId="f0513113-25bd-4727-a67a-ed1076fb3a7a" connectionstring="jdbc:mysql://localhost:3306/testing_agent;userId:root;pwd:Maxi@1029"  />
+ 	
+</AgentConfiguration>

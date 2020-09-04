@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="CheckInPlugin" class="checkin.CheckInPlugin">
+		<property name="name" value="CheckInPlugin" />
+		<property name="sleepInterval" value="2" />
+	</bean>
+
+	<bean id="ConnectionThresholdPlugin" class="connectionthreshold.ConnectionThresholdPlugin">
+		<property name="name" value="ConnectionThresholdPlugin" />
+		<property name="sleepInterval" value="2" />
+	</bean>
+
+	<bean id="ErrorLogPlugin" class="errorlog.ErrorLogPlugin">
+		<property name="name" value="ErrorLogPlugin" />
+		<property name="sleepInterval" value="2" />
+	</bean>
+
+	<bean id="GaleraClusterMonitorPlugin" class="galeraclustermonitor.GaleraClusterMonitorPlugin">
+		<property name="name" value="GaleraClusterMonitorPlugin" />
+		<property name="sleepInterval" value="2" />
+	</bean>
+
+	<bean id="GaleraSynchStatusPlugin" class="galerasynchstatus.GaleraSynchStatusPlugin">
+		<property name="name" value="GaleraSynchStatusPlugin" />
+		<property name="sleepInterval" value="2" />
+	</bean>
+
+	<bean id="NDBClusterStatusPlugin" class="ndbclusterstatus.NDBClusterStatusPlugin">
+		<property name="name" value="NDBClusterStatusPlugin" />
+		<property name="sleepInterval" value="2" />
+	</bean>
+
+
+	<bean id="SlaveIsUpPlugin" class="slaveisup.SlaveIsUpPlugin"
+		autowire="byName">
+		<property name="name" value="SlaveIsUpPlugin" />
+		<property name="sleepInterval" value="4" />
+		<property name="hostDetails" value="linuxmysqlhost=jdbc:mysql://localhost:3306/;linuxmysqluser=root;linuxmysqlpass=root"/>
+	</bean>
+	<bean>
+		<property name="sl" value="2" />
+		<property name="sleepInterval" value="4" />
+	</bean>
+
+	<bean id="MySqlStatus" class="mysqlstatus.MySqlStatus">
+		<property name="name" value="MySqlStatus" />
+		<property name="sleepInterval" value="4" />
+		<property name="connectionstring"
+			value="jdbc:mysql://localhost:3306/testing_agent;userId:root;pwd:Maxi@1029" />
+
+	</bean>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<bean id="LinOraDbTblSizePlugin" class="linoradbtblsizeplugin.LinOraDbTblSizePlugin">
+		<property name="name" value="LinOraDbTblSizePlugin" />
+		<property name="sleepInterval" value="4" />
+		<property name="hostDetails"
+			value="linuxoraclehost=jdbc:oracle:thin:@//192.168.30.209:1521/XE;linuxoracleuser=iamoracle as sysdba;linuxoraclepass=iamoracle" />
+	</bean>
+
+	
+	
+	
+	
+	
+	
+	
+
+	<bean id="SlaveLagPlugin" class="slavelag.SlaveLagPlugin">
+		<property name="name" value="SlaveLagPlugin" />
+		<property name="sleepInterval" value="2" />
+		<property name="connectionstring"
+			value="jdbc:mysql://localhost:3406/testing_agent;userId:root;pwd:Maxi@1029" />
+
+	</bean>
+
+	<bean id="TableLockPlugin" class="tablelock.TableLockPlugin">
+		<property name="name" value="TableLockPlugin" />
+		<property name="sleepInterval" value="2" />
+	</bean>
+	<!-- my code starts here kailas kakade -->
+	<bean id="linuxdetails" class="connection.LinuxBeanConfiguration">
+		<property name="hostDetails"
+			value="linuxhost=192.168.1.144;linuxuser=mate18;linuxpass=12345678" />
+	</bean>
+	<!-- my code ends here kailas kakade -->
+</beans>

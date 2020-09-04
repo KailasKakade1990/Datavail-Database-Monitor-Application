@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="sleepinterval">2</entry>
+<entry key="serverurl">http://192.168.22.213/v41/</entry>
+<entry key="localconfigfile">DeltaAgent.xml</entry>
+<entry key="remoteconfigfile">temp/delta.xml</entry>
+<entry key="pluginfilepath">lib/</entry>
+<entry key="linuxpassword">12345678</entry>
+<entry key="clientid">311cf2eb-7a3e-4ee2-8e16-e290220721e9</entry>
+<entry key="springbootconfigpath">temp/springboot.xml</entry>
+</properties>

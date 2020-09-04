@@ -1,0 +1,9 @@
+[Unit]
+Description=deltaagentupdater
+After=syslog.target
+
+[Service]
+ExecStart=/var/datavail/agentupdater.jar
+
+[Install]
+WantedBy=multi-user.target

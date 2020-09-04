@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    
+    <bean id="CheckInPlugin"
+          class="checkin.CheckInPlugin">
+        <property name="name" value="CheckInPlugin" />
+        <property name="sleepInterval" value="2" />
+    </bean>
+    
+    <bean id="ConnectionThresholdPlugin"
+          class="connectionthreshold.ConnectionThresholdPlugin">
+        <property name="name" value="ConnectionThresholdPlugin" />
+        <property name="sleepInterval" value="2" />
+    </bean>
+    
+    <bean id="ErrorLogPlugin"
+          class="errorlog.ErrorLogPlugin">
+        <property name="name" value="ErrorLogPlugin" />
+        <property name="sleepInterval" value="2" />
+    </bean>
+    
+    <bean id="GaleraClusterMonitorPlugin"
+          class="galeraclustermonitor.GaleraClusterMonitorPlugin">
+        <property name="name" value="GaleraClusterMonitorPlugin" />
+        <property name="sleepInterval" value="2" />
+    </bean>
+    
+    <bean id="GaleraSynchStatusPlugin"
+          class="galerasynchstatus.GaleraSynchStatusPlugin">
+        <property name="name" value="GaleraSynchStatusPlugin" />
+        <property name="sleepInterval" value="2" />
+    </bean>
+    
+    <bean id="NDBClusterStatusPlugin"
+          class="ndbclusterstatus.NDBClusterStatusPlugin">
+        <property name="name" value="NDBClusterStatusPlugin" />
+        <property name="sleepInterval" value="2" />
+    </bean>
+    
+    <bean id="SlaveIsUpPlugin"
+          class="slaveisup.SlaveIsUpPlugin">
+        <property name="name" value="SlaveIsUpPlugin" />
+        <property name="sleepInterval" value="2" />
+    </bean>
+    
+    <bean id="SlaveLagPlugin"
+          class="slavelag.SlaveLagPlugin">
+        <property name="name" value="SlaveLagPlugin" />
+        <property name="sleepInterval" value="2" />
+    </bean>
+    
+    <bean id="TableLockPlugin"
+          class="tablelock.TableLockPlugin">
+        <property name="name" value="TableLockPlugin" />
+        <property name="sleepInterval" value="2" />
+    </bean>
+
+</beans>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<!-- <properties>
+<entry key="linuxurl">jdbc:mysql://10.159.228.131</entry>
+<entry key="linuxusername">datavail</entry>
+<entry key="linuxpassword">datavail</entry>
+<entry key="linuxuser">10.159.228.131</entry>
+<entry key="linuxhost">dvmysql</entry>
+<entry key="linuxpass">datavail</entry>
+<entry key="command">cat /var/log/mysql.err</entry>
+<entry key="deltaagent">DeltaAgent.xml</entry>
+<entry key="deltaagentlogfile">AgentLog.txt</entry>
+<entry key="clienturl">http://192.168.22.213/v41/Server/PostData</entry>
+<entry key="clienturl1">http://192.168.22.213/v41/Server/CheckIn</entry>
+</properties> -->
+
+
+<!-- Shishu Test Server (centos server) -->
+<properties>
+
+<!-- oracle properties -->
+<entry key="linuxoraclehost">jdbc:oracle:thin:@localhost:1521:xe</entry>
+<entry key="linuxoracleuser">iamoracle</entry>
+<entry key="linuxoraclepass">iamoracle</entry>
+<!-- End of oracle properties -->
+
+<entry key="sleepinterval">3</entry>
+<entry key="serverurl">http://192.168.22.213/v41/</entry>
+<entry key="localconfigfile">DeltaAgent.xml</entry>
+<entry key="remoteconfigfile">temp/delta.xml</entry>
+<entry key="pluginfilepath">lib/</entry>
+<entry key="linuxpassword">12345678</entry>
+<entry key="clientid">clientidplaceholder</entry>
+<entry key="springbootconfigpath">temp/springboot.xml</entry>
+
+<entry key="linuxhost">192.168.1.144</entry>
+<entry key="linuxuser">mate18</entry>
+<entry key="linuxpass">12345678</entry>
+<entry key="linuxmysqlhost">jdbc:mysql://localhost:3306/testing_agent</entry>
+<entry key="linuxmysqluser">root</entry>
+<entry key="linuxmysqlpass">Maxi@1029</entry>
+<entry key="command">cat /var/log/mysql/error.log</entry>
+<entry key="deltaagent">DeltaAgent.xml</entry>
+<entry key="deltaagentlogfile">AgentLog.txt</entry>
+<entry key="clienturl">http://192.168.22.213/v41/Server/PostData</entry>
+<entry key="clienturl1">http://192.168.22.213/v41/Server/CheckIn</entry>
+<!--<entry key="clienturl">http://httpbin.org/post</entry>
+<entry key="clienturl1">http://httpbin.org/post</entry>-->
+</properties>
